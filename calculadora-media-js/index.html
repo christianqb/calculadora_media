@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="reset.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio 01</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1>
+           <span>1° desafio </span> 
+           <img src="./Group 1.svg" height="86" width="86" >
+        </h1>
+        <div id="box">
+            <div id="item1"></div>
+        </div>
+
+        <input id="nome" type="text" placeholder="nome do aluno" min="5" max="256"  >
+
+        <input id="nota1" type="number" placeholder="nota 1° bimestre" max="10" min="1" minlength="1" maxlength="10"
+            step="0.1">
+
+        <input id="nota2" type="number" placeholder="nota 2° bimestre" max="10" min="1" minlength="1" maxlength="10"
+            step="0.1">
+
+        <input id="nota3" type="number" placeholder="nota 3° bimestre" max="10" min="1" minlength="1" maxlength="10"
+            step="0.1">
+
+        <input id="nota4" type="number" placeholder="nota 4° bimestre" max="10" min="1" minlength="1" maxlength="10"
+            step="0.1">
+
+        <button type="submit" id="btnCalcular">calcular</button>
+
+
+
+        <div class="box">
+            <h2 id="nomeAluno">nome aluno</h2>
+            <div class="line"></div>
+            <div class="grade-container">
+                <div class="grades">
+                    <div class="grades-title" >1° bimestre</div>
+                    <div class="grades-value"id="bimestre1">0,0</div>
+                </div>
+                <div class="grades">
+                    <div class="grades-title" >2° bimestre</div>
+                    <div class="grades-value" id="bimestre2">0,0</div>
+                </div>
+               
+                <div class="grades">
+                    <div class="grades-title" >3° bimestre</div>
+                    <div class="grades-value"id="bimestre3">0,0</div>
+                </div>
+                <div class="grades">
+                    <div class="grades-title" >4° bimestre</div>
+                    <div class="grades-value"id="bimestre4">0,0</div>
+                </div>
+                <div class="grades">
+                    <div class="grades-title" >Média</div>
+                    <div class="grades-value" id="Medias" >0,0</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+<script src="./script.js"></script>
+</body>
+
+</html>
